@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sushant Kumar Mishra | Linux &amp; DevOps</title>
+    <title>Sushant Kumar Mishra | Backend &amp; Cloud</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,27 +14,42 @@
           <span class="logo">SKM</span>
           <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
+            <a href="#internships">Internships</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
 
         <div class="hero-content">
-          <p class="eyebrow">Hello, I'm</p>
+          <p class="eyebrow">Backend &amp; Cloud Engineer</p>
           <h1>Sushant Kumar Mishra</h1>
           <p class="tagline">
-            Linux and DevOps-focused engineer working with Bash automation, cloud
-            fundamentals, and reliable infrastructure.
+            Building reliable distributed systems and practical cloud services.
+            Focused on Java, Spring Boot, Docker, AWS, and secure APIs.
           </p>
-          <a
-            class="button"
-            href="https://github.com/i-am-sushant"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Connect on GitHub</a
-          >
+          <div class="hero-actions">
+            <a class="button" href="mailto:sukmishr@gmail.com">Email Me</a>
+            <a
+              class="button ghost"
+              href="https://github.com/i-am-sushant"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a>
+            <a
+              class="button ghost"
+              href="https://linkedin.com/in/i-am-sushant/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a>
+          </div>
+          <ul class="hero-meta">
+            <li>Gr. Noida, UP, India</li>
+            <li>91176288988</li>
+            <li><a href="https://sushantmishra.me" target="_blank" rel="noopener noreferrer">sushantmishra.me</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -45,58 +60,194 @@
         <div class="container">
           <h2>About</h2>
           <p>
-            I enjoy digging into systems, automating repeatable tasks, and
-            learning how infrastructure scales. My focus is on practical Linux
-            administration, infrastructure as code fundamentals, and keeping
-            platforms reliable for the people who use them.
+            I build backend services and cloud-ready systems with a focus on
+            reliability, observability, and secure integration. I enjoy turning
+            product ideas into APIs, pipelines, and services that scale with
+            real-world usage.
           </p>
         </div>
       </section>
 
-      <!-- Skills section -->
-      <section class="section reveal" id="skills">
+      <section class="section reveal" id="education">
         <div class="container">
-          <h2>Skills</h2>
-          <ul class="skill-list">
-            <li>Linux administration</li>
-            <li>Bash scripting</li>
-            <li>Git &amp; GitHub</li>
-            <li>Docker containers</li>
-            <li>Basic AWS services</li>
-            <li>Networking fundamentals</li>
-          </ul>
+          <h2>Education</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                <span>08/2022 - Present</span>
+              </div>
+              <p>Noida Institute of Engineering and Technology, Greater Noida, UP</p>
+              <p class="muted">CGPA: 7.43/10</p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <h3>Senior Secondary (Class XII) - CBSE</h3>
+                <span>06/2018 - 08/2020</span>
+              </div>
+              <p>Darbhanga Public School, Darbhanga, Bihar</p>
+              <p class="muted">Percentage: 89.60%</p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <h3>Secondary (Class X) - CBSE</h3>
+                <span>06/2017 - 06/2018</span>
+              </div>
+              <p>Darbhanga Public School, Darbhanga, Bihar</p>
+              <p class="muted">Percentage: 96.00%</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- Projects section -->
+      <!-- Skills section -->
       <section class="section reveal" id="projects">
         <div class="container">
           <h2>Projects</h2>
           <div class="card-grid">
             <article class="card">
-              <h3>Automation Toolkit</h3>
-              <p>Shell utilities for repeatable provisioning and backups.</p>
+              <div class="card-head">
+                <h3>SendNForget (Java, Spring Boot)</h3>
+                <span>11/2025</span>
+              </div>
+              <p>Distributed notification pipeline with RabbitMQ to decouple ingestion and async processing.</p>
+              <ul>
+                <li>Retry/backoff strategy with state tracking in PostgreSQL for delivery guarantees.</li>
+                <li>Automated CI/CD with GitHub Actions, deployed on DigitalOcean behind Nginx + HTTPS.</li>
+              </ul>
             </article>
             <article class="card">
-              <h3>Container Lab</h3>
-              <p>Docker-based environments for testing infrastructure ideas.</p>
+              <div class="card-head">
+                <h3>URL Shortener (Spring Boot)</h3>
+                <span>07/2025</span>
+              </div>
+              <p>REST APIs to generate short URLs with validation and reliable redirects.</p>
+              <ul>
+                <li>Configurable expiration logic with persistent URL mappings.</li>
+                <li>Docker Compose for local run (API + Postgres).</li>
+              </ul>
             </article>
             <article class="card">
-              <h3>Cloud Notes</h3>
-              <p>Documentation space for AWS fundamentals and best practices.</p>
+              <div class="card-head">
+                <h3>Authlog IDS (Java, CLI)</h3>
+                <span>09/2024</span>
+              </div>
+              <p>Intrusion detection engine that extracts auth events from log streams.</p>
+              <ul>
+                <li>Detected brute-force and fail-to-success patterns using time-window rules.</li>
+                <li>Structured alerts to accelerate triage and response.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card-head">
+                <h3>BareMetalHTTP (C)</h3>
+                <span>06/2023</span>
+              </div>
+              <p>Minimal HTTP web server using Linux sockets.</p>
+              <ul>
+                <li>Implemented request parsing, file serving, 200/404 responses, and basic MIME types.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="section reveal" id="internships">
+        <div class="container">
+          <h2>Internships</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <h3>Network Security Associate – Virtual Intern</h3>
+                <span>07/2024 - 09/2024</span>
+              </div>
+              <p>AICTE | EduSkills Foundation (Fortinet)</p>
+              <ul>
+                <li>Hands-on exposure to firewalls, access control, and basic threat modeling.</li>
+                <li>Performed security labs and assessments involving network policy enforcement.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <h3>Cloud Intern – Virtual</h3>
+                <span>09/2023 - 11/2023</span>
+              </div>
+              <p>AICTE | EduSkills Foundation (AWS Academy)</p>
+              <ul>
+                <li>Hands-on exposure to AWS core services, cloud architecture, and security basics.</li>
+                <li>Completed guided labs and assessments using AWS Academy resources.</li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
 
       <!-- Blog / notes placeholder -->
-      <section class="section reveal" id="blog">
+      <section class="section reveal" id="skills">
         <div class="container">
-          <h2>Blog / Notes</h2>
-          <p>
-            Upcoming notes on Linux commands, DevOps tooling, and hands-on
-            experiments in automation.
-          </p>
+          <h2>Skills</h2>
+          <div class="skill-grid">
+            <div>
+              <h3>Programming</h3>
+              <ul class="chip-list">
+                <li>Java</li>
+                <li>SQL</li>
+                <li>OOP</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Systems &amp; Platforms</h3>
+              <ul class="chip-list">
+                <li>Linux fundamentals</li>
+                <li>Git fundamentals</li>
+                <li>Docker basics</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Backend &amp; Networking</h3>
+              <ul class="chip-list">
+                <li>Spring Boot</li>
+                <li>REST APIs</li>
+                <li>HTTP/TCP/IP fundamentals</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Cloud &amp; DevOps</h3>
+              <ul class="chip-list">
+                <li>AWS (EC2, S3, IAM)</li>
+                <li>Docker</li>
+                <li>GitHub Actions</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Soft Skills</h3>
+              <ul class="chip-list">
+                <li>Communication</li>
+                <li>Leadership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="achievements">
+        <div class="container">
+          <h2>Achievements</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Google Cloud Study Jam 2023</h3>
+              <p>Completed the Computing Fundamentals training track organized by GDSC NIET.</p>
+            </article>
+            <article class="card">
+              <h3>Google Cloud Skills Boost</h3>
+              <p>Achieved Silver League status (Top Tier) with 15+ skill badges in Generative AI and Cloud Infrastructure.</p>
+            </article>
+            <article class="card">
+              <h3>Student Leadership</h3>
+              <p>Appointed as School Captain (2016, 2018) to represent the student body.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -104,21 +255,20 @@
       <section class="section reveal" id="contact">
         <div class="container">
           <h2>Contact</h2>
-          <p>Find my work and updates on GitHub.</p>
-          <a
-            class="link"
-            href="https://github.com/i-am-sushant"
-            target="_blank"
-            rel="noopener noreferrer"
-            >github.com/i-am-sushant</a
-          >
+          <p>Let’s connect to build reliable backend systems and cloud services.</p>
+          <div class="contact-grid">
+            <a class="link" href="mailto:sukmishr@gmail.com">sukmishr@gmail.com</a>
+            <a class="link" href="tel:+91176288988">91176288988</a>
+            <a class="link" href="https://linkedin.com/in/i-am-sushant/" target="_blank" rel="noopener noreferrer">linkedin.com/in/i-am-sushant</a>
+            <a class="link" href="https://github.com/i-am-sushant" target="_blank" rel="noopener noreferrer">github.com/i-am-sushant</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <p>Built with clean HTML, CSS, and a minimal touch of JavaScript.</p>
+        <p>Designed as a one-page resume site with clean HTML, CSS, and a touch of motion.</p>
       </div>
     </footer>
 
